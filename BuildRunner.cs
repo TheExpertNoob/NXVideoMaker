@@ -193,7 +193,7 @@ public static class BuildRunner
             log.Report("[7/7] Finalising NSP...");
             string tidLower  = cfg.TitleId.ToLowerInvariant();
             string rawNsp    = Path.Combine(nspDir, $"{tidLower}.nsp");
-            string nspName   = $"{cfg.Title} [{tidLower}][v0].nsp";
+            string nspName   = $"{tidLower}.nsp";
             string nspDest   = Path.Combine(cfg.ExeDir, nspName);
 
             if (File.Exists(rawNsp))

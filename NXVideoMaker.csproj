@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>NXVideoMaker</AssemblyName>
+    <RootNamespace>NXVideoMaker</RootNamespace>
+    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <PublishTrimmed>false</PublishTrimmed>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\icon.ico" />
+    <EmbeddedResource Include="Resources\hacpack.exe" />
+    <EmbeddedResource Include="Resources\npdmtool.exe" />
+    <EmbeddedResource Include="Resources\npdm.json" />
+    <EmbeddedResource Include="Resources\logo\**\*" />
+    <EmbeddedResource Include="Resources\template\index\exefs\main" />
+    <EmbeddedResource Include="Resources\template\video\exefs\main" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+  </ItemGroup>
+
+</Project>
